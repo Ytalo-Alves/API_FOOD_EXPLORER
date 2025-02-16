@@ -11,7 +11,7 @@ class DishesController {
       throw new AppError("This dish already exists on the menu.");
     }
 
-    // Insert the dish (without an image)
+    // Insert the dish (without an image)b
     const [dish_id] = await knex("dishes").insert({
       title,
       description,
